@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+<body>
+<div class="container">
+    <a href="dashboard.html" class="confirm btn btn-primary align-content-center interest-btn accept">Go back</a>
+
+    <h2 id="welcome">Welcome, </h2>
+    <p>You have been invited for some activities! Respond to your activities here: </p>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h3 class="display-5">Doing Coffee with Czar</h3>
+            <p class="lead">Would you like to go on this event?</p>
+            <button class="confirm btn btn-success align-content-center interest-btn accept">Yes</button>
+            <button class="confirm btn btn-danger align-content-center interest-btn decline">No</button>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h3 class="display-5">Going to the cinema with Jens</h3>
+            <p class="lead">Would you like to go on this event?</p>
+            <button class="confirm btn btn-success align-content-center interest-btn accept">Yes</button>
+            <button class="confirm btn btn-danger align-content-center interest-btn decline">No</button>
+        </div>
+    </div>
+
+    <h3>Your confirmed appointments. Enjoy!</h3>
+
+        <div class="jumbotron jumbotron-fluid confirmed">
+            <div class="container">
+                <h3 class="display-5">Cycling with Laurens</h3>
+                <p class="lead">You have both confirmed this appointment.</p>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid confirmed">
+            <div class="container">
+                <h3 class="display-5">Running with Lennart</h3>
+                <p class="lead">You have both confirmed this appointment.</p>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid confirmed">
+            <div class="container">
+                <h3 class="display-5">Cycling with Nico</h3>
+                <p class="lead">You have both confirmed this appointment.</p>
+            </div>
+        </div>
+
+    <div class="jumbotron jumbotron-fluid confirmed">
+        <div class="container">
+            <h3 class="display-5">Doing Coffee With Czar</h3>
+            <p class="lead">You have both confirmed this appointment.</p>
+        </div>
+    </div>
+
+        <h3>You have sent the following invites</h3>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="display-5">Doing Coffee with Martin</h3>
+                <p class="lead">Waiting for Martin's confirmation.</p>
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3 class="display-5">Going to the movies with Jeremy</h3>
+                <p class="lead">Waiting for Jeremy's confirmation.</p>
+            </div>
+        </div>
+
+
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/dashboard.js"></script>
+<script type="text/javascript" src="js/review.js"></script>
+
+</body>
+</html>

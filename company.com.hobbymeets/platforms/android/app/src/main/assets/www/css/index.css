@@ -1,0 +1,30 @@
+
+.img-profile {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    display: block;
+}
+
+.confirmed {
+    background-color: #ccffd2;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+#dynamic-activities {
+    margin-top: 50px;
+}
+
+.hamburger {
+    background-image: url("img/hamburger.png");
+    width: 40px;
+    height: 50px;
+}
+
+.btn-primary {
+    background-color: #9370db;
+    border-color: #9370db;
+}
