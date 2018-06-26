@@ -7,6 +7,8 @@ data = {
 };
 
 console.log(sessionStorage.getItem("id"));
+
+//Ajax call to database
 $.ajax({
     type: "POST",
     url: "http://friendlygamechat.jasperdekroon.nl/getdatabase.php",
@@ -19,6 +21,7 @@ function successHandler(data){
     console.log(data);
 }
 
+//Sets message local storage and redirects to dashboard.
 $(".confirm").on("click", function(){
     sessionStorage.setItem("message", "Appointment sent! Check your schedule for more information");
     window.location.replace("dashboard.html");

@@ -1,12 +1,14 @@
 var data;
 
-
+//Fills data variable to call to database
 data = {
     method: "getinterests",
     userid: parseInt(sessionStorage.getItem("id"))
 };
 
 console.log(sessionStorage.getItem("id"));
+
+//AJAX call to database
 $.ajax({
     type: "POST",
     url: "http://friendlygamechat.jasperdekroon.nl/getdatabase.php",
@@ -15,9 +17,17 @@ $.ajax({
     success: successHandler
 });
 
+/**
+ * If AJAX is succesful, page gets dynamically filled with user data
+ * @param data
+ */
+
 function successHandler(data) {
     $.each(data, function (i, value) {
         console.log(Object.values(value));
+
+        //Currently is linked to the interests currently available in database. Should be more dynamic in a future version
+
         if(Object.values(value) == 0){
             $("#dynamic-activities").append('<button data-id= 0 data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-lg btn-block align-content-center interest-btn">Going to the movies</button>')
         } else if(Object.values(value) == 1){
